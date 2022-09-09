@@ -11,3 +11,10 @@ Follow [Microsoft's documentation](https://docs.microsoft.com/en-us/exchange/cli
 >    Console.WriteLine(o365.GetEmails())
 > 
 >    Console.WriteLine(o365.DeleteEmail("AAMkAGZkNjJhMjlkLTd"))
+
+
+## Regarding the Data
+
+Data is receieved in JSON format. The JObject returned by GetEmails can be parsed by the following command:
+
+> response.GetValue("id")
